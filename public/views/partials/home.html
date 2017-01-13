@@ -1,0 +1,23 @@
+<section class="container-fluid">
+  <p id="homeDescription">Here lies Tau's shelf of random things to make us feel at home</p>
+  <img src="images/tauShelf.png" class="img-responsive">
+
+
+  <div class="userDiv col-sm-3 col-md-2 sidebar">
+    <h4>Registered Users:</h4>
+    <p ng-repeat='user in users'>
+      {{user}}
+    </p>
+  </div>
+  <h3 id="homeSubHeading">Check out our new items on the shelf!!</h3>
+
+  <div id="displayNewItem" ng-repeat="item in items" class="col-xs-6 col-sm-3 tile">
+    <p>{{item.description}}</p>
+    <img ng-src="{{item.image_url}}" class="img-responsive">
+    <p>submitted by: {{item.user}}</p>
+    <button type="button" ng-click="deleteItem(item._id)" class="btn close">Delete Item</button>
+  </div>
+  </section>
+<footer class="col-xs-12 footer">
+  Built by the bananaFunction
+</footer>

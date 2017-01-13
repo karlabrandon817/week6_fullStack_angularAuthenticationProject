@@ -1,0 +1,28 @@
+
+
+#homeDescription, #homeSubHeading{
+  font-size: 40px;
+  text-align: center;
+  font-style: sans-serif;
+}
+
+#homeSubHeading{
+  font-size: 30px;
+}
+
+#displayNewItem{
+  list-style-type: none;
+  /*display: inline-flex;*/
+
+}
+
+footer {
+  background-color: #FFE135;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.userDiv {
+  background-color: #FFE135
+}
